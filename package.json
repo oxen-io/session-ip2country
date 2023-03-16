@@ -8,6 +8,7 @@
     "url": "https://github.com/willscott/ip2country.git"
   },
   "scripts": {
+    "rebuild-all": "rm -f node_modules/asbycountry/asbycountry.json && node node_modules/asbycountry/rebuild.js && node_modules/grunt/bin/grunt",
     "test": "grunt test"
   },
   "keywords": [
@@ -33,6 +34,6 @@
     "stream-reduce": "^1.0.3"
   },
   "dependencies": {
-    "asbycountry": "^1.2.0"
+    "asbycountry": "https://github.com/oxen-io/session-asbycountry#4dc682949ede511fb1d494e293d5284631da0427"
   }
 }
